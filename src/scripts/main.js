@@ -6,7 +6,7 @@ const largeImg = document.querySelector('#largeImg');
 images.addEventListener('click', (even) => {
   even.preventDefault();
 
-  const link = even.target.closest('a' || 'img');
+  const link = even.target.closest('a');
 
   if (!link || !images.contains(link)) {
     return;
